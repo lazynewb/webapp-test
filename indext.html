@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple-Inspired Webpage</title>
+    <style>
+      /* Global Reset & Typography */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", sans-serif;
+        color: #1d1d1f;
+        background-color: #fff;
+        line-height: 1.6;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Header */
+      header {
+        width: 100%;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 100;
+      }
+      .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: -0.5px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav li {
+        margin-left: 30px;
+      }
+      nav a:hover {
+        opacity: 0.7;
+      }
+
+      /* Main Content Adjusted for Fixed Header */
+      main {
+        padding-top: 100px;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin-bottom: 40px;
+        color: #3c3c43;
+      }
+      .hero img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+
+      /* Feature Section */
+      .feature {
+        padding: 80px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .feature-card {
+        text-align: center;
+      }
+      .feature-card h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .feature-card p {
+        font-size: 1rem;
+        color: #3c3c43;
+        margin-bottom: 20px;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 1px solid #e5e5e5;
+        font-size: 0.9rem;
+        color: #6e6e73;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+        }
+        nav ul {
+          flex-direction: column;
+          margin-top: 10px;
+        }
+        nav li {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Bisakan</div>
+      <nav>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Introducing a New Era of Innovation</h1>
+        <p>
+          Experience the perfect blend of performance and design. Discover what
+          makes our latest product a milestone in technology.
+        </p>
+        <marquee behavior="" direction="">Bisakan Innovation</marquee>
+      </section>
+
+      <!-- Feature Section -->
+      <section class="feature">
+        <div class="feature-card">
+          <h2>Advanced Technology</h2>
+          <p>
+            Crafted with state-of-the-art technology to deliver unmatched
+            performance and efficiency.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h2>Elegant Design</h2>
+          <p>
+            A minimalistic, intuitive design that exudes sophistication and
+            simplicity.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h2>Uncompromised Quality</h2>
+          <p>
+            Built to last with the finest materials and exceptional attention to
+            detail.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Bisakan. All Rights Reserved.
+    </footer>
+  </body>
+</html>
